@@ -20,6 +20,8 @@ void Main()
 		modifiedFile = newLinesBetweenMoves.Replace(modifiedFile, string.Empty);
 		modifiedFile = spaceAfterDots.Replace(modifiedFile, ".");
 
+		modifiedFile = modifiedFile.Replace("  ", " ");
+
 		sw.Write(modifiedFile);
 	}
 }
